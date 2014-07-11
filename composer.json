@@ -1,0 +1,38 @@
+{
+    "name": "yosymfony/spress-core",
+    "description": "Static site generator with blogs support",
+    "keywords": ["cms","blog","web","markdown","twig","silex","html"],
+    "license": "MIT",
+    "homepage": "http://spress.yosymfony.com",
+    "authors": [
+        {
+            "name": "Victor Puertas",
+            "email": "vpgugr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/console": "2.4.*@dev",
+        "symfony/finder": "2.4.*@dev",
+        "symfony/filesystem": "2.4.*@dev",
+        "symfony/event-dispatcher": "2.4.*@dev",
+        "silex/silex": "1.1.*@dev",
+        "michelf/php-markdown": "1.4.*@dev",
+        "composer/composer": "1.*@dev",
+        "dflydev/embedded-composer-core": "1.0.*@dev",
+        "yosymfony/config-serviceprovider": ">=1.2,<2.0-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosymfony\\Spress\\Core": "",
+            "Yosymfony\\Spress\\Plugin": "Plugin/BackwardsCompatibility"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1-dev"
+        }
+    }
+}
